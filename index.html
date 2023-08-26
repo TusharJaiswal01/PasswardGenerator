@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pg</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Passward generator</h1>
+        <div class="inputBox">
+            <input type="text" class="passBox" id="passBox" disabled>
+            <span class="material-icons" id="copy-icon">
+                content_copy
+                </span>
+        </div>
+        <input type="range" min="1" max="25" value="4" id="inputSlider">
+        <div class="row">
+
+            <p>Passward length</p>
+            <span id="sliderValue"></span>
+        </div>
+        <div class="row">
+        <label for="lowercase">include lowercase letters(a-z)</label>
+        <input type="checkbox" name="lowercase" id="lowercase">
+        </div>
+        <div class="row">
+        <label for="uppercase">include uppercase letters(A-Z)</label>
+        <input type="checkbox" name="uppercase" id="uppercase">
+        </div>
+        <div class="row">
+        <label for="numbers">include numbers (0-9)</label>
+        <input type="checkbox" name="numbers" id="numbers">
+        </div>
+        <div class="row">
+        <label for="symbols">include symbosl(@-*)</label>
+        <input type="checkbox" name="symbols"id="symbols">
+        </div>
+        <button type="button" class="genBtn" id="genBtn">genrete passward</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
